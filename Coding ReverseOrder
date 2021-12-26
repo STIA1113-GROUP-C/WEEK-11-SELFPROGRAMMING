@@ -1,6 +1,6 @@
 package selfProgramming;
 import java.util.Scanner;
-public class Array {
+public class ReverseOrder {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
