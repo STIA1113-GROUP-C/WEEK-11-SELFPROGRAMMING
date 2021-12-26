@@ -1,0 +1,26 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int item1; int item2; int item3; int item4; int item5;
+		int sum;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter five integers one number per line");
+		
+		item1 = sc.nextInt();
+		item2 = sc.nextInt(); 	
+	    item3 = sc.nextInt();
+		item4 = sc.nextInt();
+		item5 = sc.nextInt();
+			
+		sum = item1 + item2 + item3 + item4 + item5;
+			
+		System.out.println("The sum of the numbers= " + sum);
+		System.out.println("The numbers in reverse order are: ");
+		System.out.println(item5 + " " + item4 + " " + item3 + " " + item2 + " " + item1);
+	}
+
+}
