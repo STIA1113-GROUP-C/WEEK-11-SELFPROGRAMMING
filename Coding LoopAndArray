@@ -1,0 +1,60 @@
+package selfProgramming;
+
+public class LoopAndArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	1.Initializing an array to a specific value
+    
+    double[] sales = new double[10];
+		int index;
+
+		for (index = 0; index < sales.length;index++)
+		    sales[index] = 10.00;
+        
+  2.Input data into an array
+
+		double[] sales = new double[10];
+		int index;
+		
+		for (index = 0; index < sales.length; index++)
+			sales[index] = input.nextDouble();
+		
+	3.Printing an array
+		double[] sales = new double[10];
+		int index;
+		
+		for(index = 0; index < sales.length; index++)
+			System.out.println(sales[index] + " ");
+		
+	4.Find the sum and average of an array
+		double[] sales = new double[10];
+		int index;
+		double sum, average;
+
+		sum = 0;
+		for(index = 0; index < sales.length;index++) 
+			sum = sum + sales[index];
+
+		if (sales.length != 0)
+		    average = sum / sales.length;
+		else
+		    average = 0.0;
+
+	5. Determining the largest element in the array		
+		double[] sales = new double[10];
+		int index, maxIndex;
+		double largestSale;
+
+		maxIndex = 0;
+
+		for(index = 1; index<sales.length;index++) 
+		   if (sales[maxIndex] < sales[index])
+		       maxIndex = index;
+		largestSale = sales[maxIndex];
+
+		System.out.println(largestSale);
+	}
+
+}
